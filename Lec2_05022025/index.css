@@ -246,7 +246,7 @@
     .description-container {
         padding: 20px;
         font-size: 1rem;
-        position: absolute;
+        /* position: fixed; */
         max-width: 100%;
         overflow: scroll;
     }
