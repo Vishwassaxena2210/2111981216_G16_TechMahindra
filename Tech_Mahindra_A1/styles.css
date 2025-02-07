@@ -5,39 +5,35 @@
     color: hsl(192, 100%, 9%);
 }
 
-/* NAVBAR SECTION */
-.navbar{
+
+.head{
     position: fixed;
     display: flex;
     width: 100%;
     justify-content: center;
-    /* border: 2px solid red; */
     padding: 50px 0;
     background-color: white;
 }
 
-.navbardiv{
+.head_div{
     display: flex;
     justify-content: space-between;
     width: 90%;
 }
 
-.right-{
+.head_right{
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.right p{
+.head_right p{
     border: 1px solid hsl(322, 100%, 66%);
     border-radius: 40px;
     padding: 5px 20px;
     font-size: 15px;
-    /* color: rgb(223,96,188); */
     color: hsl(322, 100%, 66%);
 }
-
-/* BODY CONTENT */
 .body1{
     padding-top: 20%;
     font-family: "Poppins", serif;
@@ -53,21 +49,22 @@
     gap: 30px;
 }
 
-.a_body1 h1{
+.body1 h1{
     font-size: 40px;
     font-weight: 700;
     font-family: "Poppins", serif;
 }
 
-.a_body1 p{
+.body1 p{
     width: 35%;
 }
 
-.a_body1 button{
+.body1 button{
     background-color: hsl(322, 100%, 66%);
     padding: 20px 90px;
     border: none;
     border-radius: 50px;
+    font-style:"OpenSans";
     color: white;
     font-size: 15px;
     margin-top: 10px;
@@ -75,126 +72,100 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.img1{
+.body2{
     margin-top: 100px;
 }
-
-/* qualities-info */
-.numbers-flex{
+.body3{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 100px 0;
 }
 
-.qualities{
+.a_body3{
     display: flex;
     flex-direction: column;
     justify-content: left;
 }
 
-.qualities-info{
+.b_body3 h2{
     text-align: center;
     align-items: center;
-    /* border: 2px solid red; */
 }
 
-.qualities-info p{
-    /* border: 2px solid green; */
+.b_body3 p{
     width: 100%;
 }
 
-.qualities-info h2{
+.b_body3 h2{
     font-size: 90px;
     font-weight: 700;
     font-family: "Open Sans", serif;
 }
 
-.qualities-info p{
+.b_body3 p{
     font-size: 20px;
     color: gray;
 }
 
-/* grow together */
-
-.grow-together-container {
+.body6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid green; */
     margin-top: -10px;
     padding: 50px 120px;
     gap: 10px; 
-    /* margin: auto;  */
-    font-family: "Open Sans", serif;
+   font-family: "Open Sans", serif;
     background-color:  hsl(207, 100%, 98%);
 }
 
-.grow-together-text-section {
+.a_body6 {
     text-align: left;
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.grow-together-text-section h2 {
+.a_body6 h2 {
     font-size: 40px;
     font-weight: 700;
 }
 
-.grow-together-text-section p {
+.a_body6 p {
     width: 80%;
     font-weight: 400;
 }
-
-/* .grow-together-container img {
-    max-width: 100%; 
-    height: auto;
-} */
-
-/* flowing-conversations-section */
-
-.flowing-conversations-section{
+.body8{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: center;
-    /* border: 2px solid green; */
     margin-top: 6rem;
     margin-bottom: 3rem;
     padding: 50px 120px;
     gap: 100px; 
-    /* margin: auto;  */
     font-family: "Open Sans", serif;
 }
 
-.flowing-conversations-text-section {
+.a_body8 {
     text-align: left;
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     gap: 30px;
-    /* padding-left: 80px; */
+    
 }
 
-.flowing-conversations-text-section h2 {
+.a_body8 h2 {
     font-size: 40px;
     font-weight: 700;
 }
 
-.flowing-conversations-text-section p {
+.a_body8 p {
     width: 100%;
     font-weight: 400;
 }
-/* 
-.flowing-conversations-section img {
-    max-width: 100%; 
-    height: auto;
-} */
 
-/* Build Your Community */
-.build-your-community{
+.body7{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,16 +174,11 @@
     margin-top: 8rem;
     margin-bottom: 10rem;
 }
-
-
-/* footer section */
-
 footer{
     display: flex;
     flex-direction: row;
     background-color: hsl(192, 100%, 9%);
     justify-content:space-between;
-    /* gap: 30%; */
     padding: 100px 130px;
     margin-top: -10px;
 }
@@ -225,8 +191,7 @@ footer span{
     color: gainsboro;
 }
 
-.footer-left-container{
-    /* border: 2px solid red; */
+.footL{
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -234,65 +199,62 @@ footer span{
     justify-content: left;
 }
 
-.phone-info{
+.phone{
     display: flex;
     gap: 15px;
 }
 
-.email-info{
+.email{
     display: flex;
     gap: 15px;
 }
-
-
-.logo-image-white {
+.logoL {
     float: left;
     max-width: 100%; 
     height: auto;
 }
 
-.social-media-icons{
+.social_media{
     padding-top: 50px;
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.footer-right-container{
-    /* border: 2px solid red; */
+.footR{
     width: 40%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.subscribe-section{
+.subscribe{
     display: flex;
     flex-direction: row;
     gap: 25px;
 }
 
-.newsletter-section h2{
+.newsletter h2{
     color: white;
     font-size: 30px;
     font-weight: 500;
 }
 
-.newsletter-section{
+.newsletter{
     width: 75%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.subscribe-section input{
+.subscribe input{
     border: none;
     padding: 10px;
     border-radius: 5px;
     width: 60%;
 }
 
-.subscribe-section button{
+.subscribe button{
     border: none;
     background-color: hsl(322, 100%, 66%);
     padding: 10px 35px;
@@ -301,53 +263,43 @@ footer span{
     font-weight: 500;
 }
 
-.bg-section-top-mobile{
+.body4{
     display: none;
 }
 
-.bg-section-top-desktop{
+.body5{
     display: block;
 }
-
-
-/* responsive design */
 @media (max-width:  375px) {
-    
-    /* navbar */
-    .navbar-main{
+    .head{
         width: 100%;
         padding: 25px 0;
     }
-
-    .right-navbar p{
+    .head_right p{
         border: 1px solid hsl(322, 100%, 66%);
         border-radius: 40px;
         padding: 5px 20px;
         font-size: 10px;
-        /* color: rgb(223,96,188); */
         color: hsl(322, 100%, 66%);
     }
-
-    .left-navbar img{
+    .head_left img{
         height: 15px;
     }
-
-    /* Body content */
-    .get-started-for-free{
+    .a_body1{
         gap: 20px;
         padding: 35% 40px 0 40px;
     }
 
-    .get-started-for-free h1{
+    .a_body1 h1{
         font-size: 25px;
     }
 
-    .get-started-for-free p{
+    .a_body1 p{
         width: 90%;
         font-size: 12px;
     }
 
-    .body-content-container button{
+    .body1 button{
         background-color: hsl(322, 100%, 66%);
         padding: 10px 40px;
         border: none;
@@ -358,61 +310,53 @@ footer span{
         font-weight: 500;
     }
 
-    .screen-mockups-image{
+    .body2{
         width: 80%;
     }
-
-    /* qualities-info */
-    .numbers-flex{
+    .body3{
         display: flex;
         flex-direction: column;
         padding: 20px 20% 0 20%;
         gap: 6rem;
     }
 
-    .qualities img{
+    .a_body3 img{
         width: 30px;
         margin-left: 35px;
     }
 
-    .qualities-info h2{
+    .b_body3 h2{
         font-size: 60px;
     }
 
-    .qualities-info p{
+    .b_body3 p{
         font-size: 15px;
         font-weight: 400;
     }
-
-    /* grow together */
-    .bg-section-top-mobile{
+    .body4{
         display: block;
     }
 
-    .bg-section-top-desktop{
+    .body5{
         display: none;
     }
 
-    .grow-together-container {
+    .body6 {
         display: flex;
         flex-direction: column-reverse;
-        /* justify-content: space-between; */
         align-items: center;
-        /* border: 2px solid green; */
         margin-top: -10px;
         gap: 80px; 
         font-family: "Open Sans", serif;
         background-color:  hsl(207, 100%, 98%);
     }
 
-    .grow-together-container img{
+    .body6 img{
         width: 260px;
-        /* border: 2px solid red; */
         padding-top: 50px;
     }
 
-    .grow-together-text-section{
-        /* border: 2px solid red; */
+    .a_body6{
         padding: 0;
         margin: 0;
         gap: 15px;
@@ -420,37 +364,33 @@ footer span{
         text-align: center;
     }
 
-    .grow-together-text-section h2{
+    .a_body6 h2{
         font-size: 20px;
     }
 
-    .grow-together-text-section p{
+    .a_body6 p{
         font-size: 13px;
         width: 100%;
         text-align: center;
         padding-bottom: 30px;
     }
     
-    /* Flowing Conversations */
-    .flowing-conversations-section{
+   
+    .body8{
         display: flex;
         flex-direction: column-reverse;
-        /* justify-content: space-between; */
         align-items: center;
-        /* border: 2px solid green; */
         margin-top: -10px;
         gap: 80px; 
         font-family: "Open Sans", serif;
     }
 
-    .flowing-conversations-section img{
+    .body8 img{
         width: 260px;
-        /* border: 2px solid red; */
         padding-top: 70px;
     }
 
-    .flowing-conversations-text-section{
-        /* border: 2px solid red; */
+    .a_body8{
         padding: 0;
         margin: 0;
         gap: 15px;
@@ -458,79 +398,76 @@ footer span{
         text-align: center;
     }
 
-    .flowing-conversations-text-section h2{
+    .a_body8 h2{
         font-size: 20px;
     }
 
-    .flowing-conversations-text-section p{
+    .a_body8 p{
         font-size: 13px;
         width: 100%;
         text-align: center;
     }
     
-    /* Ready To Build Your Community */
-    .build-your-community h1{
+   
+    .body7 h1{
         font-size: 25px;
     }
 
-    .build-your-community{
+    .body7{
         padding-bottom: 6rem;
     }
 
-    /* footer section */
+   
     footer{
         display: flex;
         flex-direction: column-reverse;
-        background-color: hsl(192, 100%, 9%);
-        /* justify-content:space-between; */
-        gap: 7rem;
+        background-color: hsl(192, 100%, 9%);gap: 7rem;
         padding: 50px 30px 30px 30px;
         margin-top: -1px;
     }
 
-    /* footer right */
-    .footer-right-container h2{
+    
+    .footR h2{
         font-size: 22px;
     }
 
-    .footer-right-container{
+    .footR{
         font-size: 15px;
         width: 100%;
     }
 
-    .subscribe-section{
+    .subscribe{
         display: flex;
         flex-direction: column;
         gap: 15px;
-        /* border: 2px solid red; */
         align-items: end;
     }
     
-    .newsletter-section h2{
+    .newsletter h2{
         color: white;
         font-size: 22px;
         font-weight: 500;
     }
 
-    .newsletter-section p{
+    .newsletter p{
         width: 100%;
     }
     
-    .newsletter-section{
+    .newsletter{
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
     
-    .subscribe-section input{
+    .subscribe input{
         border: none;
         padding: 15px;
         border-radius: 5px;
         width: 90%;
     }
     
-    .subscribe-section button{
+    .subscribe button{
         border: none;
         background-color: hsl(322, 100%, 66%);
         padding: 15px 45px;
@@ -540,17 +477,12 @@ footer span{
         font-weight: 500;
     }
     
-    .bg-section-top-mobile{
+    .body4{
         display: none;
     }
-    
-    .bg-section-top-desktop{
-        display: block;
-    }
-
-    /* footer left */
-    .footer-left-container{
-        /* border: 2px solid red; */
+ 
+    .footL{
+      
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -558,7 +490,7 @@ footer span{
         justify-content: left;
     }
     
-    .logo-image-white {
+    .logoL {
         float: left;
         max-width: 70%; 
         height: auto;
