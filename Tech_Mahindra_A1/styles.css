@@ -9,16 +9,16 @@
 .head{
     position: fixed;
     display: flex;
+    padding: 30px 0;
+    background-color: white;
     width: 100%;
     justify-content: center;
-    padding: 50px 0;
-    background-color: white;
 }
 
 .head_div{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
 }
 
 .head_right{
@@ -28,17 +28,17 @@
 }
 
 .head_right p{
+    font-size: 18px;
+    color: hsl(322, 100%, 66%);
     border: 1px solid hsl(322, 100%, 66%);
     border-radius: 40px;
-    padding: 5px 20px;
-    font-size: 15px;
-    color: hsl(322, 100%, 66%);
+    padding: 5px 15px;
 }
 .body1{
+    text-align: center;
+    margin-bottom: 3rem;
     padding-top: 20%;
     font-family: "Poppins", serif;
-    text-align: center;
-    margin-bottom: 4rem;
 }
 
 .a_body1{
@@ -46,7 +46,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 30px;
+    gap: 25px;
 }
 
 .body1 h1{
@@ -66,7 +66,7 @@
     border-radius: 50px;
     font-style:"OpenSans";
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 10px;
     font-weight: 500;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -98,32 +98,32 @@
 }
 
 .b_body3 h2{
-    font-size: 90px;
+    font-size: 80px;
     font-weight: 700;
     font-family: "Open Sans", serif;
 }
 
 .b_body3 p{
     font-size: 20px;
-    color: gray;
+    color: darkgray;
 }
 
 .body6 {
+    font-family: "Open Sans", serif;
+    background-color:  hsl(207, 100%, 98%);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px; 
     margin-top: -10px;
     padding: 50px 120px;
-    gap: 10px; 
-   font-family: "Open Sans", serif;
-    background-color:  hsl(207, 100%, 98%);
 }
 
 .a_body6 {
-    text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    text-align: left;
+    gap: 25px;
 }
 
 .a_body6 h2 {
@@ -136,22 +136,22 @@
     font-weight: 400;
 }
 .body8{
+    font-family: "Open Sans", serif;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: center;
+    gap: 100px; 
     margin-top: 6rem;
     margin-bottom: 3rem;
-    padding: 50px 120px;
-    gap: 100px; 
-    font-family: "Open Sans", serif;
+    padding: 30px 120px;
 }
 
 .a_body8 {
-    text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
+    text-align: left;
     
 }
 
@@ -169,44 +169,44 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 30px;
     margin-top: 8rem;
     margin-bottom: 10rem;
+    text-align: center;
+    gap: 25px;
 }
 footer{
     display: flex;
     flex-direction: row;
     background-color: hsl(192, 100%, 9%);
-    justify-content:space-between;
     padding: 100px 130px;
-    margin-top: -10px;
+    margin-top: -9px;
+    justify-content:space-between;
 }
 
 footer p{
-    color: gainsboro;
+    color: white;
 }
 
 footer span{
-    color: gainsboro;
+    color: white;
 }
 
 .footL{
     width: 30%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     justify-content: left;
 }
 
 .phone{
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .email{
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 .logoL {
     float: left;
@@ -215,52 +215,52 @@ footer span{
 }
 
 .social_media{
-    padding-top: 50px;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    padding-top: 50px;
+    gap: 15px;
 }
 
 .footR{
-    width: 40%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
+    width: 40%;
 }
 
 .subscribe{
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 30px;
 }
 
 .newsletter h2{
     color: white;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .newsletter{
-    width: 75%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    width: 75%;
 }
 
 .subscribe input{
     border: none;
     padding: 10px;
-    border-radius: 5px;
     width: 60%;
+    border-radius: 5px;
 }
 
 .subscribe button{
     border: none;
     background-color: hsl(322, 100%, 66%);
-    padding: 10px 35px;
-    border-radius: 5px;
+    padding: 10px 23px;
     color: white;
     font-weight: 500;
+    border-radius: 5px;
 }
 
 .body4{
@@ -300,14 +300,14 @@ footer span{
     }
 
     .body1 button{
-        background-color: hsl(322, 100%, 66%);
-        padding: 10px 40px;
-        border: none;
-        border-radius: 50px;
         color: white;
         font-size: 12px;
         margin-top: 10px;
         font-weight: 500;
+        background-color: hsl(322, 100%, 66%);
+        padding: 10px 40px;
+        border: none;
+        border-radius: 50px;
     }
 
     .body2{
@@ -344,24 +344,24 @@ footer span{
     .body6 {
         display: flex;
         flex-direction: column-reverse;
-        align-items: center;
         margin-top: -10px;
         gap: 80px; 
         font-family: "Open Sans", serif;
         background-color:  hsl(207, 100%, 98%);
+        align-items: center;
     }
 
     .body6 img{
-        width: 260px;
         padding-top: 50px;
+        width: 260px;
     }
 
     .a_body6{
         padding: 0;
-        margin: 0;
         gap: 15px;
         width: 220%;
         text-align: center;
+        margin: 0;
     }
 
     .a_body6 h2{
@@ -370,19 +370,19 @@ footer span{
 
     .a_body6 p{
         font-size: 13px;
-        width: 100%;
         text-align: center;
         padding-bottom: 30px;
+        width: 100%;
     }
     
    
     .body8{
         display: flex;
         flex-direction: column-reverse;
-        align-items: center;
         margin-top: -10px;
         gap: 80px; 
         font-family: "Open Sans", serif;
+        align-items: center;
     }
 
     .body8 img{
@@ -393,9 +393,9 @@ footer span{
     .a_body8{
         padding: 0;
         margin: 0;
-        gap: 15px;
         width: 220%;
         text-align: center;
+        gap: 15px;
     }
 
     .a_body8 h2{
@@ -404,8 +404,8 @@ footer span{
 
     .a_body8 p{
         font-size: 13px;
-        width: 100%;
         text-align: center;
+        width: 100%;
     }
     
    
@@ -422,8 +422,8 @@ footer span{
         display: flex;
         flex-direction: column-reverse;
         background-color: hsl(192, 100%, 9%);gap: 7rem;
-        padding: 50px 30px 30px 30px;
         margin-top: -1px;
+        padding: 50px 30px 30px 30px;
     }
 
     
@@ -439,8 +439,8 @@ footer span{
     .subscribe{
         display: flex;
         flex-direction: column;
-        gap: 15px;
         align-items: end;
+        gap: 10px;
     }
     
     .newsletter h2{
@@ -454,27 +454,27 @@ footer span{
     }
     
     .newsletter{
-        width: 100%;
         display: flex;
         flex-direction: column;
+        width: 100%;
         gap: 20px;
     }
     
     .subscribe input{
-        border: none;
-        padding: 15px;
         border-radius: 5px;
         width: 90%;
+        border: none;
+        padding: 15px;
     }
     
     .subscribe button{
         border: none;
         background-color: hsl(322, 100%, 66%);
         padding: 15px 45px;
-        border-radius: 5px;
-        font-size: 15px;
         color: white;
         font-weight: 500;
+        border-radius: 5px;
+        font-size: 15px;
     }
     
     .body4{
@@ -486,8 +486,8 @@ footer span{
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 20px;
         justify-content: left;
+        gap: 20px;
     }
     
     .logoL {
