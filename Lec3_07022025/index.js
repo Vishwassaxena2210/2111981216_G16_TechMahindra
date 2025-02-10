@@ -1,8 +1,10 @@
+//single threaded and loosly typed language
 //let (block scoped) cannot be redeclare but can be reassigned.
 //in var we can redeclare global scope and also can reassigned the value.
 //always declare all the variables on the top.
 //types of loop: For, For Each, While, Do While, For in, For of
 //tempate literals ${i} from ejs
+//GEC global execution context
 //syntax of for each 
 /*
 arr=[1,2,3,4,5];
@@ -54,6 +56,11 @@ innerText: gives spaces as well
 textContent: 
 */
 
-
+var a=10;
+function sqr(x){
+var ans=x*x;
+return ans;
+}
+console.log(sqr(a));
 
 
