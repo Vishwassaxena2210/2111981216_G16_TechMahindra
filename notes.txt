@@ -1,0 +1,102 @@
+STUDY FROM DOCS(MDN)
+//single threaded and loosly typed language
+//let (block scoped) cannot be redeclare but can be reassigned.
+//in var we can redeclare global scope and also can reassigned the value.
+//always declare all the variables on the top.
+//types of loop: For, For Each, While, Do While, For in, For of
+//tempate literals ${i} from ejs
+//GEC global execution context
+//syntax of for each 
+/*
+arr=[1,2,3,4,5];
+arr.forEach(function(ele){
+    console.log(ele);
+    });
+
+//for in loops
+
+for(let i in arr){
+    console.log(i,arr[i]);
+    //arr[i] for element and i for index
+    
+}
+
+//for of loops
+
+for(let i of arr){
+    console.log(i);
+    //here i is value
+}
+
+//while
+
+let i=0;
+while(i<=10){
+    console.log(i);
+    i++;
+}
+
+//do while(runs atleast one time)
+
+do{
+    console.log("g16");
+    
+}
+while(i<=10)
+    i++;
+*/
+////////////////////////////////////////////////////////////
+
+/*DOM Manipulation (DOM convert HTML code to a tree like structure)
+window is the parent of document
+ways to do: getElementById , getElementsByClassName , getElementByTagName
+other ways: querySelector : document.querySelector(".classname"/"#idname")
+document.querySelectorAll(".classname"/"#idname")
+
+innerText: gives spaces as well
+textContent: 
+
+1> types of error messages
+reference error , type error , syntax error 
+2> all let , var and const are hoisted 
+*/
+
+// console.log(abc);
+// sum(10,5);
+// var abc=29;
+// function sum(a,b) {
+//     var ans=a+b;
+//     return ans;
+// }
+// var major=sum(6,8);
+// console.log(major);
+
+//hositing
+
+// console.log(a);
+// var a=1;
+// console.log(b);
+// let b=2;
+
+/*
+this keyword: window object === this
+lexical order : grand parent -> parent -> child(can access all from parent and grand parent)
+TDZ : temporal dead zone 
+console(a)                console(a) phase1
+var a=5;                  let a=5;
+console(a)                console(a) phase2
+time between phase 1 and phase 2
+*/ 
+////////////////////////////////////////////
+closures: a closure is a combination of a function bundled together(enclosed) with references to its surrounding state(the lexical enviroment).
+*it is  bundled with its own scope and lexical order parent scope 
+*they are made on top of functions
+*data hiding and encapsulation
+
+////////////////////////////////////////////
+Set Timeout and Set Interval: are asynchronous and callbacks
+SetTimeout: runs once
+SetInterval: runs again and again and again
+
+////////////////////////////////////////////
+higher order functions: it can take function as argument and return a function.                                                                                         
