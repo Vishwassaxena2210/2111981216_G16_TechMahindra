@@ -92,6 +92,7 @@ closures: a closure is a combination of a function bundled together(enclosed) wi
 *it is  bundled with its own scope and lexical order parent scope 
 *they are made on top of functions
 *data hiding and encapsulation
+*disadvantage =>  
 
 ////////////////////////////////////////////
 Set Timeout and Set Interval: are asynchronous and callbacks
@@ -100,3 +101,8 @@ SetInterval: runs again and again and again
 
 ////////////////////////////////////////////
 higher order functions: it can take function as argument and return a function.                                                                                         
+////////////////////////////////////////////
+functions => 
+>function statement / function declaration
+>function expression: can be named or anonymous
+>anonymous function
