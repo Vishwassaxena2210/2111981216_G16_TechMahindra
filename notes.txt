@@ -1,4 +1,5 @@
 STUDY FROM DOCS(MDN)
+//js => interpreted when launched now both compiled(code quality) and interpreted(fast code execution)
 //single threaded and loosly typed language
 //let (block scoped) cannot be redeclare but can be reassigned.
 //in var we can redeclare global scope and also can reassigned the value.
@@ -98,7 +99,7 @@ closures: a closure is a combination of a function bundled together(enclosed) wi
 Set Timeout and Set Interval: are asynchronous and callbacks
 SetTimeout: runs once
 SetInterval: runs again and again and again
-
+these are also callbacks
 ////////////////////////////////////////////
 higher order functions: it can take function as argument and return a function.                                                                                         
 ////////////////////////////////////////////
@@ -106,3 +107,17 @@ functions =>
 >function statement / function declaration
 >function expression: can be named or anonymous
 >anonymous function
+////////////////////////////////////////////
+callback: pass function as an argument and return a function
+callbacks can be both asynchronous and synchronous (90% times asynchronous)
+/////////////////////////////////////
+parts of browser => js engine => jre
+1.callstack 
+2.webapis: setTimeout, setInterval,bluetooth,geolocation,console.log,url-path,camera,microphone,local storage,cookies,session
+3.event loop 4.callback queue 5.microtask queue
+///////////////////////////
+what is an event loop?
+/////////////////////////////
+microtask vs marcrotask
+microtask(priority high): promises 
+marcrotask: setTimeout, setInterval
