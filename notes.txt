@@ -121,3 +121,6 @@ what is an event loop?
 microtask vs marcrotask
 microtask(priority high): promises 
 marcrotask: setTimeout, setInterval
+///////////////////////////////////////////
+hof: functions as arguments & can return a function also 
+benifits: optimization, readability
