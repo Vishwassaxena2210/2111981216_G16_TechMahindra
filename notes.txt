@@ -124,3 +124,20 @@ marcrotask: setTimeout, setInterval
 ///////////////////////////////////////////
 hof: functions as arguments & can return a function also 
 benifits: optimization, readability
+/////////////////////////////////////
+map and filter : return array
+reduce: return single value pass two arguments 
+acc= accumulator
+curr=current
+////////////////////////////////////////////////////////////////
+promises(VVIP)
+
+promise was introduced to ignore this messy code
+a asynchronous functions is attached to main function
+states of promise: pending , reject , fulfilled
+promise provide an object by telling state 
+promise apis: 
+>Promise.all()
+>Promise.allSettled() 
+>Promise.race() 
+>Promise.any()
