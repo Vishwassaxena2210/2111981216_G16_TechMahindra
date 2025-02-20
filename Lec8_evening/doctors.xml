@@ -21,7 +21,7 @@
             <patients>
                 <patient>
                     <name>Lisa Brown</name>
-                    <age>30</age>
+                    <age>30</age>,
                     <condition>Acne</condition>
                 </patient>
                 <patient>

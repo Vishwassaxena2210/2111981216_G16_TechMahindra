@@ -137,7 +137,12 @@ a asynchronous functions is attached to main function
 states of promise: pending , reject , fulfilled
 promise provide an object by telling state 
 promise apis: 
->Promise.all()
->Promise.allSettled() 
+>Promise.all():if any one is rejected it does not move ahead
+>Promise.allSettled():go for all parallely if any is rejected it does not stop checking others
 >Promise.race() 
 >Promise.any()
+///////////////////////////////////
+
+Async & await 
+kisi bhi function ko asynchronous banane mein kaam aata hai
+we use try and catch with async await

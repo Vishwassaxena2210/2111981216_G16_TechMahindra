@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Form</title>
+</head>
+<body>
+
+ <form id="userForm">
+    <label for="uname">Username:</label>
+    <input type="text" id="uName" name="uname" required>
+    <label for="uid">User ID:</label>
+    <input type="text" id="uId" name="uid" required>
+    
+    <button type="submit">Submit</button>
+    <button type="button" id="updateBtn">Update</button>
+    <button type="button" id="deleteBtn">Delete</button>
+</form>
+
+<script type="module">
+    // Import Firebase modules
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+    import { getDatabase, ref, set, update, remove, get } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-database.js";
+
+    // Your Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAl6an-Sl8mUTdJx6u1p118UencofYs1Tg",
+        authDomain: "newfirebase-6b916.firebaseapp.com",
+        databaseURL: "https://newfirebase-6b916-default-rtdb.firebaseio.com",
+        projectId: "newfirebase-6b916",
+        storageBucket: "newfirebase-6b916.appspot.com",
+        messagingSenderId: "355213453566",
+        appId: "1:355213453566:web:a314c9b9e1373b46b25daf",
+        measurementId: "G-GQC718YDVG"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+
+    document.getElementById("userForm").addEventListener("submit", setData);
+    document.getElementById("updateBtn").addEventListener("click", updateData);
+    document.getElementById("deleteBtn").addEventListener("click", deleteData);
+
+    // Function to Add Data to Firebase
+    function setData(event) {
+        event.preventDefault(); 
+        const uId = document.getElementById("uId").value;
+        const uName = document.getElementById("uName").value;
+        if (!uId || !uName) {
+            alert("Please fill in all fields.");
+            return;
+        }
+        set(ref(database, "users/" + uId), {
+            name: uName,
+            timestamp: new Date().toISOString()
+        })
+        .then(() => {
+            alert("Data sent to Firebase successfully!");
+            document.getElementById("userForm").reset();
+        })
+        .catch(error => {
+            console.error("Error sending data:", error);
+            alert("Failed to send data.");
+        });
+    }
+
+    // Function to Update Data in Firebase
+    function updateData() {
+        const uId = document.getElementById("uId").value;
+        const uName = document.getElementById("uName").value;
+        if (!uId || !uName) {
+            alert("Please fill in both User ID and Name fields.");
+            return;
+        }
+        get(ref(database, "users/" + uId)).then(user => {
+            if (user.exists()) {
+                update(ref(database, "users/" + uId), {
+                    name: uName
+                })
+                .then(() => {
+                    alert("User updated successfully!");
+                    document.getElementById("userForm").reset();
+                })
+                .catch(error => {
+                    console.error("Error updating data:", error);
+                    alert("Failed to update user.");
+                });
+            } else {
+                alert("User ID does not exist. Please enter a valid User ID.");
+            }
+        });
+      
+    }
+
+    // Function to Delete Data from Firebase
+    function deleteData() {
+        const uId = document.getElementById("uId").value;
+
+        if (!uId) {
+            alert("Please enter User ID to delete.");
+            return;
+        }
+
+        // Check if user exists
+        get(ref(database, "users/" + uId)).then(user => {
+            if (user.exists()) {
+                remove(ref(database, "users/" + uId))
+                .then(() => {
+                    alert("User deleted successfully!");
+                    document.getElementById("userForm").reset();
+                })
+                .catch(error => {
+                    console.error("Error deleting data:", error);
+                    alert("Failed to delete user.");
+                });
+            } else {
+                alert("User ID does not exist. Please enter a valid User ID.");
+            }
+        })
+    }
+</script>
+
+</body>
+</html>
