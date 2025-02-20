@@ -4,17 +4,21 @@ function createCounter() {
 
     function increment() {
         count++;
-        console.log(count);
+        
     }
 
     function decrement() {
         count--;
-        console.log(count);
+        
     }
 
-   
+    function getCount() {
+        return count;
+    }
 
-    return { increment, decrement};
+    return { increment, decrement, getCount };
+
+    
 }
 
 // Testing the counter
@@ -23,4 +27,4 @@ const counter = createCounter();
 counter.increment(); 
 counter.increment(); 
 counter.decrement(); 
-
+console.log(counter.getCount());
