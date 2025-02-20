@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2>Doctor Details</h2>
+        <label>Name:  <input type="text" id="name"></label><br>
+        <label>Specialty:  <input type="text" id="specialty"></label><br>        
+        <label>Experience:  <input type="text" id="experience"></label><br>
+    <button onclick="addDoctor()">Add Doctor</button>
+    <button onclick="testCases()">Run Test case</button>
+    <h3>Doctor List</h3>
+    <div id="doctorList"></div>
+    <script>
+        let doctors=[];
+        function addDoctor(){
+            let name=document.getElementById("name").value;
+            let specialty=document.getElementById("specialty").value;
+        let experience=document.getElementById("experience").value;
+        if(!(name||specialty||experience)){
+            alert("please fill all details");
+            return;
+        }
+        let doctor={
+            name: name,
+            specialty: specialty,
+            experience:parseInt(experience),
+        };
+        doctors.push(doctor);//add to list objs
+        
+        displayDoctor();
+        }
+        function displayDoctor(){
+            let output=document.getElementById("doctorList");
+            output.innerHTML='';
+            doctors.forEach((doc,index)=>{
+                output.innerHTML+=`<p>${index+1}. Dr.${doc.name} , Specialty:${doc.specialty} , Experience:${doc.experience} years</p>`;
+            });
+        }
+        function testCases(){
+            dostors=[];
+            document.getElementById('doctorList').innerHTML='';
+            let testDoctor1={name:'Sai',specialty:'Cardiology',experience:10};
+            let testDoctor2={name:'Samarth',specialty:'Neurology',experience:8};
+            doctors.push(testDoctor1,testDoctor2);
+            displayDoctor();
+            console.assert(doctors.length===2,'Test Case 1 failed');
+            console.assert(doctors[0].name==='Sai',"Test Case 2 Failed");
+            console.assert(doctors[1].experience===8,"test Case 3 Failed");
+            console.log("All Test cases Passed");
+        }
+        </script>
+</body>
+</html>

@@ -67,7 +67,8 @@
     }
 
     // Function to Update Data in Firebase
-    function updateData() {
+    function updateData(event) {
+        event.preventDefault();
         const uId = document.getElementById("uId").value;
         const uName = document.getElementById("uName").value;
         if (!uId || !uName) {
@@ -95,9 +96,9 @@
     }
 
     // Function to Delete Data from Firebase
-    function deleteData() {
+    function deleteData(event) {
+        event.preventDefault();
         const uId = document.getElementById("uId").value;
-
         if (!uId) {
             alert("Please enter User ID to delete.");
             return;
