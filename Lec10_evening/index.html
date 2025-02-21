@@ -20,7 +20,7 @@
             let name=document.getElementById("name").value;
             let specialty=document.getElementById("specialty").value;
         let experience=document.getElementById("experience").value;
-        if(!(name||specialty||experience)){
+        if(!name||!specialty||!experience){
             alert("please fill all details");
             return;
         }
@@ -41,7 +41,7 @@
             });
         }
         function testCases(){
-            dostors=[];
+            doctors=[];
             document.getElementById('doctorList').innerHTML='';
             let testDoctor1={name:'Sai',specialty:'Cardiology',experience:10};
             let testDoctor2={name:'Samarth',specialty:'Neurology',experience:8};

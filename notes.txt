@@ -146,3 +146,11 @@ promise apis:
 Async & await 
 kisi bhi function ko asynchronous banane mein kaam aata hai
 we use try and catch with async await
+////////////////////////////////////////////////
+call() , apply() , bind()
+function invokes directly by call and apply
+in bind we can store the reference of that function for future calling
+=> call(objectName,what to pass);
+=> apply(objectName,array can be passed);
+///////////////////////////////////////////////
+debouncing in js
